@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EoCart</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+     crossorigin="anonymous">
+
+     <link rel="stylesheet" href="index.css">
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+     crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <nav class="  sticky-top  ">
+        <div class="navbar  u-nav-container d-flex justify-content-between  navbar-expand-lg navbar-dark bg-dark px-3 ">
+          <div >
+            <h4 class="text-white"><a class="nav-link " id="logoIcon" href="index.php">EoCart <span class="sr-only">(current)</span></a></h4>
+          </div>
+          <div class="" >
+            <div   id=" navbarText ">
+              <ul class=" navbar-nav inline list-group list-group-horizontal-sm">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#sliderSession">Cart <span class="sr-only">(current)</span></a>
+                  </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <div class="form-inline">
+                      <form action="details.php">
+                            <input class="form-control mr-sm-2" type="search" name='searchValue' placeholder="Search productID" aria-label="Search">
+                            <input class="btn px-2  btn-outline-success my-2 my-sm-0" type="submit" value = 'Submit'>  </form> 
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class=" px-2 d-flex flex-row-reverse ">
+                        <a href="Login.php"> <button  class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button> </a> 
+                      </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="sticky-top pt-1 px-1  " >
+          <div width="100%" height="100" class="px-1 d-flex bg-white  text-center justify-content-around">
+            <div class=""><a href="index.php?category=Laptop" ><button class="bg-white border-0"><img src="logo/Laptop.jpg" width="50" alt="logo"></button><p>Laptop</p></a> </div>
+            <div class=""><a href="index.php?category=Desktop"> <button class="border-0 bg-white "><img src="logo/Desktop.jpg" width="50" alt="logo"></button><p>Desktop</p></a></div>
+            <div class=""><a href="index.php?category=Monitor"> <button class="border-0 bg-white"><img src="logo/Monitor.png" width="50" alt="logo"></button><p>Monitor</p></a></div>
+            <div class=""><a href="index.php?category=Gaming"><button class="border-0 bg-white "><img src="logo/Gaming.jpg" width="50" alt="logo"></button><p>Gaming</p></a></div>
+            <div class=""><a href="index.php?category=Everything&page=<?php $count=1; echo $_SESSION['page']; ?>"><button class="border-0 bg-white "><img src="logo/Mouse.jpg" width="50" alt="logo"></button><p>Everything</p></a></div>
+          </div>
+        </div>
+        
+
+      </nav>
+      
+      <!-- sliding the images -->
+      <div class="container" id="sliderSession">
+        <button class="leftButton"><</button>
+        <img id="sliderImages" src="sliderImage//main.jpg" alt="'$currentImage'" width="100%">
+        <button class="rightButton">></button>
+      </div>
+
+      
+
+      <div class="container" id="container">
+        
+        
+
+      </div>
+
+      <script src="index.js"></script>
+
+
+
+  
+      
+      
+<!-- footer -->
+<footer  class="">
+    <div class="p-3 container" >
+        <div class="row head5">
+          <div class="col ">
+            <h5>HELP</h5>
+            <ul class=" text-white list-unstyled">
+                <li><a href="#" class="textDecNone"> Shipping</a> </li>
+                <li><a href="#" class="textDecNone"> Return</a> </li>
+                <li><a href="#" class="textDecNone"> FAQ </a> </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>ABOUT</h5>
+            <ul class=" text-white list-unstyled">
+                <li><a href="#" class="textDecNone"> About Us</a> </li>
+                <li><a href="#" class="textDecNone"> Contact Us</a> </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>SOCIAL</h5>
+            <ul class=" text-white list-unstyled">
+                <li><a href="#" class="textDecNone"> Facebook</a> </li>
+                <li><a href="#" class="textDecNone"> twitter</a> </li>
+              
+            </ul>
+          </div>
+          <div class="col">
+            <h5>POLICY</h5>
+            <ul class=" text-white list-unstyled">
+                <li><a href="#" class="textDecNone"> Return</a> </li>
+                <li><a href="#" class="textDecNone"> security</a> </li>
+                <li><a href="#" class="textDecNone"> Privacy </a> </li>
+            </ul>
+          </div>
+          <div class="col-1-sm vl">
+            
+        </div>
+          <div class="col">
+
+            
+            <h5>MAIL</h5>
+            <ul class=" text-white list-unstyled">
+                 <li><a href="mailto: seojameskc@gmail.com" class="textDecNone">seojameskc@gmail.com </a> </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>OFFICE ADDRESS</h5>
+            <ul class=" text-white list-unstyled">
+                <li>Hamilton,Ontario </li>
+           </ul>
+          </div>
+        </div>
+        <div class="row hl "></div>
+        <div class="row text-white">
+            <div  class="col">
+                Help Center
+            </div>
+            <div  class="col">
+                Gift Cards
+            </div>
+            <div  class="col">
+                © Seo James,000872976
+            </div>
+            
+            
+        </div>
+      </div>
+
+    
+   </footer>
+
+    
+</body>
+</html>

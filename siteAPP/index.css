@@ -1,0 +1,120 @@
+
+/**
+
+///@author: Seo James, 000872976
+
+**/
+
+/**
+changing the background color of body
+**/
+body{
+    background-color: rgb(226, 251, 255);
+}
+
+
+
+/**
+slider image container 
+**/
+.container {
+    position: relative;
+    width: 100% !important; 
+    max-width: 200%;
+		
+  }
+
+/**
+    decorating the right button for slider image
+**/
+.rightButton{
+  position: absolute;
+padding : 5px;
+background-color: rgba(0, 0, 0, 0.227);
+border-radius: 16px;
+  color: rgba(255, 255, 0, 0);
+bottom: 40%;
+  border: 0ch;
+left: 97%;
+width: 25px;
+  height: 50px;
+  }
+
+/**
+  decorrating the left button for slider image
+**/
+.leftButton{
+  position: absolute;
+  color: rgba(245, 245, 220, 0);
+  padding : 5px;
+  background-color: rgba(0, 0, 0, 0.227);
+  border-radius: 16px;
+  border: 0ch;
+  bottom: 40%;
+  left: 1%;
+  width: 25px;
+  height: 50px;
+}
+	
+/**
+  decorating the h1
+**/
+.hl{
+  padding-left: 10px;
+  border-top: 2px solid white;
+  height: 0px;
+}
+
+/**
+  spacing the footer
+**/
+.spaceFooter{
+  padding-top: 50px;
+}
+
+/**
+Decorating the footer
+**/
+footer{
+  background-color: rgb(32, 32, 32);
+}
+	
+/**
+decorating the heading
+**/
+.head5{
+  color: rgb(63, 63, 63);
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+
+.vl {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 100px;
+}
+
+/**
+
+**/
+.textDecNone{
+    text-decoration: none;
+    color: white;
+  }
+
+/**
+    decorating each item
+**/
+.itemDetail{
+  text-decoration: none  !important;
+  color: black !important;
+}
+
+/**
+  decorating each when hover
+**/
+.itemDetail:hover{
+  text-decoration: none;
+  color: rgb(0, 218, 146) !important;
+  
+}
+

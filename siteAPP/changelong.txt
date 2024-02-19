@@ -1,0 +1,17 @@
+index.html is created and the data is imported from index.js using the RESTapi and every call
+
+index.js script makes AJAX calls to call API for products, quantity, and details. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
